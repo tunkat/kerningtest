@@ -1,0 +1,26 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+     font-family: 'Noto Sans JP', sans-serif;
+     font-size: 100%;
+}
+
+h1 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 400%;
+}
+
+p.sizeper {
+  font-size: 100%;
+}
+
+p.sizepx {
+  font-size: 16px;
+}
+
+.noto100 {font-weight:100;}
+.noto300 {font-weight:300;}
+.noto400 {font-weight:400;}
+.noto500 {font-weight:500;}
+.noto700 {font-weight:700;}
+.noto900 {font-weight:900;}

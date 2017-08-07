@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jquery.kerning.js</title>
+  <style>
+    
+    @font-face {
+      font-family:'mplus-2m-regular';
+      src: url('./fonts/mplus-2m-regular-sub.eot') format('eot');
+      src: url('./fonts/mplus-2m-regular-sub.woff') format('woff');
+      src: url('./fonts/mplus-2m-regular-sub.ttf') format('truetype');
+    }
+    body {
+      font-family: 'mplus-2m-regular';
+    }
+    .kern,
+    [data-kerning] {
+      letter-spacing: 0.125em;
+    }
+  </style>
+
+  <script src="./libs/jquery/jquery.js"></script>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <script src="./dist/jquery.kerning.js"></script>
+  
+  <script>
+    $(function(){
+      $('.kern').kerning("./data/mplus-2m-regular.json");
+    });
+  </script>
+</head>
+<body>
+  <h6>plain text</h6>
+  <h1>ポラーノの広場</h1>
+  <p>
+    あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎらひかる草の波。
+  </p>
+
+  <h6>jquery.kerning.js</h6>
+  <h1 class="kern">ポラーノの広場</h1>
+  <p class="kern">
+    あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎらひかる草の波。
+  </p>
+  <p data-kerning="./data/mplus-2m-regular.json" data-kerning-extend="true">
+    あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎらひかる草の波。【参照】
+  </p>
+</body>
+</html>

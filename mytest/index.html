@@ -1,0 +1,50 @@
+<html lang="ja">
+<head>
+  <meta charset='utf-8'>
+  <title>カーニングテスト</title>
+  <style>
+  .kern,
+  [data-kerning] {
+    letter-spacing: -0.04em;
+  }
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src="https://rawgit.com/taknut/kerning/99a550ca704461f71d012bd16e63ece4f38a35a3/js/jquery.js"></script>
+  <script src="https://rawgit.com/taknut/kerning/99a550ca704461f71d012bd16e63ece4f38a35a3/js/jquery.kerning.js"></script>
+
+  <script>
+  </script>
+<body class="noto100">
+  <p>jquery.kerning.jsを利用しない</p>
+  <p data-kerning>この要素は、デフォルトのカーニング（全角約物のカーニング）が適用されます。</p>
+  <p>jquery.kerning.jsを利用</p>
+  <p>この要素は、デフォルトのカーニング（全角約物のカーニング）が適用されます。</p>
+  <h1 class="noto100">こちらに
+    <span style="letter-spacing:-0.6em">、</span>
+    <span style="margin-left:-0.5em">「</span>テキスト」
+    <span style="margin-left:-0.6em">。</span>
+  </h1>
+
+  <h1 class="noto100" data-kerning="https://rawgit.com/taknut/kerning/99a550ca704461f71d012bd16e63ece4f38a35a3/data/noto.json" data-kerning-extend="true">こちらに、テキスト。</h1>
+  <p>こちらで「オートカーニング処理」をします。</p>
+  <p data-kerning>こちらで「オートカーニング処理」をします。</p>
+  <p class="kern">こちらで「オートカーニング処理」をします。</p><br>
+  <p class="kern">
+    あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎらひかる草の波。
+  </p>
+  <p class="noto100" data-kerning="https://rawgit.com/taknut/kerning/99a550ca704461f71d012bd16e63ece4f38a35a3/data/noto.json" data-kerning-extend="true">
+    ささささささしすせそぁぃぅぇぉゃしゃちょう
+  </p>
+
+  <p>この要素は、デフォルトのカーニング（全角約物のカーニング）が適用されます。</p>
+  <p data-kerning>この要素は、デフォルトのカーニング（全角約物のカーニング）が適用されます。</p>
+
+  <p>「こんにちは。」世界。こんにちは、世界。（こんにちは、世界。）</p>
+  <p data-kerning data-kerning-extend="false">「こんにちは。」世界。こんにちは、世界。（こんにちは、世界。）</p>
+
+  <p class="sizepx">このテキストのサイズ指定はpixelです。このテキストのサイズ指定はpixelです。このテキストのサイズ指定はpixelです。このテキストのサイズ指定はpixelです。</p>
+  <p class="sizeper">このテキストのサイズ指定はpercentです。このテキストのサイズ指定はpercentです。このテキストのサイズ指定はpercentです。このテキストのサイズ指定はpercentです。</p>
+
+</body>
+</html>
