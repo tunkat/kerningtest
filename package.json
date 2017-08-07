@@ -1,25 +1,3 @@
-{
-  "name": "jquery.kerning.js",
-  "version": "0.3.1",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:KarappoInc/jquery.kerning.js.git"
-  },
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "scripts": {
-    "test": "grunt qunit"
-  },
-  "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-qunit": "~0.2.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-watch": "~0.4.0",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-coffee": "~0.10.1",
-    "grunt-contrib-connect": "~0.1.0",
-    "grunt": "~0.4.5"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b3e8383d03ff6a53a313607be8263bd3d7de73346e34c096794579c3194abf45
+size 601

@@ -1,27 +1,3 @@
-{
-  "name": "kerning",
-  "title": "jquery.kerning",
-  "description": "A jQuery kerning plugin specific with Japanese webfont.",
-  "version": "0.3.1",
-  "homepage": "http://karappoinc.github.io/jquery.kerning.js/",
-  "author": {
-    "name": "Karappo Inc.",
-    "email": "info@karappo.net",
-    "url": "http://karappo.net"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/karappoinc/jquery.kerning.js.git"
-  },
-  "bugs": "https://github.com/karappoinc/jquery.kerning.js/issues",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/KarappoInc/jquery.kerning.js/blob/master/LICENSE-MIT"
-    }
-  ],
-  "dependencies": {
-    "jquery": ">=1.7.2"
-  },
-  "keywords": ["kern","kerning","font","fonts","webfont","japanese","type","typography","style"]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6025d81449f8e9de8ec910a969695f925cd98920b7798e31d7d6b6f0b879c9cb
+size 787
